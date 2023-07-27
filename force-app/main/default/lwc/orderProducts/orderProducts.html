@@ -1,0 +1,11 @@
+<template>
+            <lightning-datatable
+            key-field="id"
+            columns={columns}
+            data={orderProducts}
+            hide-checkbox-column>
+            </lightning-datatable>
+            <template if:false={isOrderActivated}>
+                <lightning-button label="Activate" onclick={onHandleActivateButton} class="slds-float_right" style="margin:5px"></lightning-button>
+            </template>
+</template>
